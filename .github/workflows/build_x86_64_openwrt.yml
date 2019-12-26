@@ -6,7 +6,7 @@
 # Blog: https://p3terx.com
 #=================================================
 
-name:  	build_x86_64_openwrt
+name: Build x86_64 OpenWrt
 
 on: 
   release:
