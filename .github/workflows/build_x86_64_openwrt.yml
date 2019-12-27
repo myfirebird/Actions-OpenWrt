@@ -102,14 +102,9 @@ jobs:
       uses: actions/upload-artifact@master
       if: always()
       with:
-        name: openwrt-x86-64
-        path: openwrt/packages
+        name: openwrt-x86-64-packages
+        path: openwrt/bin/targets/*/*/packages
         
-      run: |
-        cd openwrt/bin/targets/*/*
-        rm -rf packages
-        echo "::set-env name=FIRMWARE::$(pwd)"
-
     - name: Upload firmware
       uses: actions/upload-artifact@master
       if: always()
